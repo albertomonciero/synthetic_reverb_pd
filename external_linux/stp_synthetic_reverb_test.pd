@@ -1,0 +1,22 @@
+#N canvas 67 87 2493 1353 10;
+#X obj 464 233 stp_synthetic_reverb~;
+#X obj 481 187 adc~;
+#X obj 464 276 dac~, f 6;
+#X msg 464 154 room_size \$1;
+#X obj 468 106 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 9800 1;
+#X obj 319 106 hsl 128 15 0 1 0 0 empty empty empty -2 -8 0 10 -262144
+-1 -1 5900 1;
+#X msg 316 155 damping \$1;
+#X floatatom 316 132 5 0 0 0 - - -, f 5;
+#X floatatom 464 131 5 0 0 0 - - -, f 5;
+#X connect 0 0 2 0;
+#X connect 0 0 2 1;
+#X connect 1 0 0 0;
+#X connect 1 1 0 0;
+#X connect 3 0 0 0;
+#X connect 4 0 8 0;
+#X connect 5 0 7 0;
+#X connect 6 0 0 0;
+#X connect 7 0 6 0;
+#X connect 8 0 3 0;
