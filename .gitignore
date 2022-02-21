@@ -51,6 +51,7 @@ Module.symvers
 Mkfile.old
 dkms.conf
 
-# Eclipse files
+# Eclipse files and folder
 .cproject
 .project
+./settings
